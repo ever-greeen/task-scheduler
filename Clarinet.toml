@@ -1,0 +1,39 @@
+[project]
+name = 'task-scheduler'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.task-execution]
+path = 'contracts/task-execution.clar'
+clarity_version = 3
+epoch = 3.0
+
+[contracts.task-management]
+path = 'contracts/task-management.clar'
+clarity_version = 3
+epoch = 3.0
+
+[contracts.task-scheduler]
+path = 'contracts/task-scheduler.clar'
+clarity_version = 3
+epoch = 3.0
+
+[contracts.task-storage]
+path = 'contracts/task-storage.clar'
+clarity_version = 3
+epoch = 3.0
+
+[contracts.task-trait]
+path = 'contracts/task-trait.clar'
+clarity_version = 3
+epoch = 3.0
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
